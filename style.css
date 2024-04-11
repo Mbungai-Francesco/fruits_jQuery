@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: space-around;
+  height: 100vh;
+}
+
+main {
+  border: 2px black solid;
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  height: fit-content;
+}
+main img {
+  width: 24%;
+  border: 1px gray solid;
+}
+main h1 {
+  text-align: center;
+}
+main .fruits {
+  display: flex;
+  height: 25vh;
+  justify-content: space-evenly;
+  margin-block: 0 0.5em;
+}
+main .text {
+  height: 100%;
+  display: flex;
+}
+
+/*# sourceMappingURL=style.css.map */
