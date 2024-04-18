@@ -5,12 +5,18 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../glide/glide/dist/css/glide.core.min.css">
+  <link rel="stylesheet" href="../glide/glide/dist/css/glide.theme.min.css">
+  <link rel="stylesheet" href="../fontawesome-free-6.5.2-web/css/all.min.css">
+
+
   <script src="./jquery-3.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="./app.js" defer></script>
+  
 </head>
 <body>
-  <main>
+  <!-- <main>
     <h1>Fruits name</h1>
     <div class="fruits">
       <img src="./images/1.jfif" alt="" srcset="" name="Orange" value="orange" num="1">
@@ -22,6 +28,44 @@
       <img src="" alt="" srcset="" name="Orange" value="orange">
       <p></p>
     </div>
-  </main>
+  </main> -->
+  <div class="container">
+    <div class="glide">
+      <div class="glide__track" data-glide-el="track">
+        <ul class="glide__slides">
+          <li class="glide__slide"><img src="./images/1.jfif" alt="" srcset="" name="Orange" value="orange" num="1"></li>
+          <li class="glide__slide"><img src="./images/2.jfif" alt="" srcset="" name="Apple" value="red" num="2"></li>
+          <li class="glide__slide"><img src="./images/3.jfif" alt="" srcset="" name="banana" value="yellow" num="3"></li>
+          <li class="glide__slide"><img src="./images/4.jfif" alt="" srcset="" name="banana" value="yellow" num="3"></li>
+        </ul>
+        <div class="glide__arrows" data-glide-el="controls">
+          <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+            <i class="fa-solid fa-angle-left"></i>
+          </button>
+          <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+            <i class="fa-solid fa-angle-right"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="../glide/glide/dist/glide.min.js"></script>
+
+  <script>
+    const animals = {
+      type: 'carousel',
+      startAt: 0,
+      perView: 3,
+      breakpoints: {
+    800: {
+      perView: 2
+    },
+    600: {
+      perView: 1
+    }
+  }
+    }
+    new Glide('.glide',animals).mount()
+  </script>
 </body>
 </html>

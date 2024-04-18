@@ -4,9 +4,12 @@
 }
 
 body {
-  display: flex;
-  justify-content: space-around;
-  height: 100vh;
+  background-color: plum;
+}
+
+img {
+  width: 80%;
+  border: 1px gray solid;
 }
 
 main {
@@ -16,10 +19,6 @@ main {
   display: flex;
   flex-direction: column;
   height: fit-content;
-}
-main img {
-  width: 24%;
-  border: 1px gray solid;
 }
 main h1 {
   text-align: center;
